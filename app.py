@@ -11,7 +11,7 @@ from fastf1_gap_app.data import get_race_gap_data
 # Config 
 
 # Years to offer in the dropdown
-YEARS = list(range(2018, 2025))
+YEARS = list(range(2018, 2026))
 
 SESSION_OPTIONS = {
     "Race": "R",
