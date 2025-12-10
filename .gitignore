@@ -1,0 +1,15 @@
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+
+# FastF1 cache
+fastf1_cache/
+
+# Streamlit cache
+.streamlit/
+
+# macOS metadata
+.DS_Store
