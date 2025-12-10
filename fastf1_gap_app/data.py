@@ -1,11 +1,14 @@
 # Loads and processes F1 session data using FastF1
 
+import os
 import fastf1
 import pandas as pd
 
 # Enable FastF1 cache so that data is saved locally
 # The cache folder should exist at the project root: ./fastf1_cache
-fastf1.Cache.enable_cache("fastf1_cache")
+CACHE_DIR = "fastf1_cache"
+os.makedirs(CACHE_DIR, exist_ok=True)
+fastf1.Cache.enable_cache(CACHE_DIR)
 
 
 def load_session(year: int, event_name: str, session_type: str):
